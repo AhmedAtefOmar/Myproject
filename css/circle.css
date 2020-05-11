@@ -1,0 +1,53 @@
+
+.firstsvg{position: relative;
+width: 150px;
+height: 150px;
+z-index: 1000;
+left: 50%;
+margin-left: -50px;
+top: 50%;
+}
+svg circle{width: 100%;
+height: 100%;
+fill: none;
+stroke: #F6F6F0;
+stroke-width: 10;
+stroke-linecap: round;
+transform: translate(5px,5px);
+}
+svg circle:nth-child(2)
+{stroke-dasharray: 220;
+stroke-dashoffset: 220;}
+.card1 svg circle:nth-child(2){
+stroke-dashoffset: calc(220 - (220 * 69 ) / 100);
+stroke: #764AF3;
+}
+.card2 svg circle:nth-child(2){
+stroke-dashoffset: calc(220 - (220 * 93 ) / 100);
+stroke: #E6513A;
+}
+.card3 svg circle:nth-child(2){
+stroke-dashoffset: calc(220 - (220 * 76 ) / 100);
+stroke: #5AB92B;
+}
+.card4 svg circle:nth-child(2){
+stroke-dashoffset: calc(220 - (220 * 89 ) / 100);
+stroke: #25C4F8;
+}
+.percent{position: relative;
+top: 20px;
+}
+.number{
+    color: #54575B;
+    
+position: absolute;
+left: 50%;
+margin-left: -30px;
+top: 50%;
+margin-top: -45px;}
+
+.precenttext{
+    font-size: 15px;
+    font-weight: 800;
+   }
+  
