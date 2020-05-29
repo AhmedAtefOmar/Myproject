@@ -1,0 +1,200 @@
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; /* Hide all elements by default */
+  }
+  
+  
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+ 
+  .btnact{
+      border: 1px solid #c9c9cc;
+      padding: 11px 20px;
+      background: none;
+      font-size: 18px;
+      font-weight: 400;
+      color: #282835;
+      font-family: 'Muli', sans-serif;
+      border-radius: 5px;
+      margin: 0 10px;
+      cursor: pointer;}
+      .btnact:focus{outline: none;
+          border: 1px solid #5D58F7;
+      background-color: #5D58F7;
+  color: white;}
+  .paddtop{padding-top: 50px;}
+  .btncontent{padding-top: 50px;}
+  .firstpart {
+      background-image: url(http://pluginspoint.com/demo/html/digee/img/bg/breadcrumb_bg.jpg);
+    
+      background-size: cover;
+      padding-bottom: 160px;
+    }
+    .mylogo {
+      width: 50px;
+      height: 50px;
+    }
+    .mainmenu {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Muli", sans-serif;
+      padding: 25px 0;
+      margin-left: 25px;
+    }
+    .singbtn {
+      width: 170px;
+      padding: 20px;
+      line-height: 15px;
+      color: #753ffa;
+      font-size: 20px;
+    }
+    .searcebtn {
+      border: none;
+      background: none;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    .menuitem {
+      position: absolute;
+      background: white;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.466);
+      border-radius: 5px;
+      z-index: 1;
+      box-sizing: border-box;
+      left: 0;
+      top: 90px;
+      width: 350px;
+      transition-duration: 0.8s;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .mainmenu:hover .menuitem {
+      top: 70px;
+      visibility: visible;
+      opacity: 1;
+    }
+    .links {
+      padding: 15px;
+      color: black;
+    }
+    .discdiv {
+      border-left: 5px solid white;
+      padding-left: 15px;
+      margin-top: 100px;
+    }
+    .discdivhead {
+      font: size 40px;
+      color: white;
+    }
+    .discdiv a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+      transition-duration: 0.5s;
+    }
+    .discdiv a:hover {
+      color: #c0beff;
+    }
+    h4 a{color: black;
+    font-size: 20px;
+  transition-duration: 0.5s;}
+    h4 a:hover{text-decoration: none;
+    color: #007bff;}
+    .parteleven {padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .seconditem {padding-left: 50px;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .seconditem:hover {
+      filter: grayscale(0%);}
+      .footer {
+          background-image: url(http://pluginspoint.com/demo/html/digee/img/bg/footer_bg01.png);
+          background-position: center top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding-top: 400px;
+          padding-bottom: 20px;
+        }
+        .footer p {
+          color: white;
+        line-height: 28px;
+          font-size: 16px;
+        }
+        .footer .mylogo {
+          padding-bottom: 70px;
+        }
+        .footerlink {
+          width: 20px;
+          height: 20px;
+          border: 1px solid white;
+          border-radius: 50%;
+          padding: 8px;
+          margin-left: 8px;
+          color: white;
+        
+          transition: 0.5s;
+        }
+        .faceicon2{width: 30px;
+        height: 25px;
+        padding: 8px 10px;}
+        .footerlink:hover {
+          text-decoration: none;
+          background: white;
+          color: #020a66;
+        }
+        .footeropt{color: white;}
+        .footeropt p a {text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.5s;}
+        .footeropt p{line-height: 20px;
+        }
+        .footeropt div{padding-top: 40px;}
+        .footeropt p a:hover{text-decoration: none;
+          padding-left: 5px;}
+          .footersupport{font-size: 20px;
+          font-weight: 500;
+        }
+        .footersupport p{line-height: 20px;}
+        .footersupport h3{margin-top: 50px;}
+        .footersupport a{border: 1px solid rgb(233, 230, 230);
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 7px;
+        text-decoration: none;
+        font-size: 16px;}
+        .Copyrightdiv{margin-top: 150px;
+          padding-top: 20px;
+        border-top: 1px solid #0c0420;}
+        .Copyrightdiv a{text-decoration: none;
+        font-weight: bold;
+        color: white;}
+        .privacya a{font-weight: normal;
+        padding-left: 10px; }
+        #scrollUp {
+          background: #6C3CF0;
+          height: 45px;
+          width: 45px;
+          right: 50px;
+          bottom: 77px;
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+          border-radius: 50%;
+          line-height: 45px;
+          z-index: 9 !important;}
+          html{scroll-behavior: smooth;}

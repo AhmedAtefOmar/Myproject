@@ -1,0 +1,112 @@
+.mylogo {
+    width: 50px;
+    height: 50px;
+  }
+  .mainmenu {
+    display: inline-block;
+    position: relative;
+    color: #E3D7FE;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Muli", sans-serif;
+    padding: 25px 0;
+    margin-left: 25px;
+  }
+  .mainmenu a{color:#E3D7FE ;
+    text-decoration: none;}
+  .singbtn {
+    width: 170px;
+    padding: 20px;
+    line-height: 15px;
+    color: #753ffa;
+    font-size: 20px;
+  }
+  .searcebtn {
+    border: none;
+    background: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  .menuitem {
+    position: absolute;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    z-index: 1;
+    box-sizing: border-box;
+    left: 0;
+    top: 90px;
+    width: 350px;
+    transition-duration: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .mainmenu:hover .menuitem {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+  }
+ .links{padding-top: 10px;
+    padding-bottom: 10px;}
+  .links a{
+    margin-left: -15px;
+    padding: 5px;
+  color: #5d58f7;
+  font-size: 14px;
+  font-weight: 400;
+  transition-duration: 0.5s;
+    
+  }
+  .links a:hover{margin-left: 5px;}
+  .discdiv {
+    border-left: 5px solid white;
+    padding-left: 15px;
+    margin-top: 100px;
+  }
+  .discdivhead {
+    font: size 40px;
+    color: white;
+  }
+  .discdiv a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    transition-duration: 0.5s;
+  }
+  .discdiv a:hover {
+    color: #c0beff;
+  }
+
+  .headnav{border: 1px solid rgb(231, 230, 230);
+  
+z-index: 9;}
+.headnavlinks{text-decoration: none !important;
+color: white !important;
+font-size: 15px !important;
+font-weight: bold !important;
+padding-left: 10px !important;}
+.dropdownlistl{background-color: #7C54F3;}
+.dropdownlistl a{text-decoration: none !important;
+color: white;}
+.dropdownlistl a:hover{text-decoration: none !important;
+background-color: transparent;
+color: white;}
+  @media screen and (min-width: 990px) {
+  nav {
+      display: none !important;
+  }}
+  @media screen and (max-width: 990px) {
+  .headbar {
+      display: none !important;
+  }
+}
+.posrel{position: relative;}
+.poabs2{position: absolute;
+background-color: #7C54F3;
+z-index: 9;
+
+
+top: 60px;}

@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main page</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home One</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
     <script
       src="https://kit.fontawesome.com/7fe7073bb1.js"
       crossorigin="anonymous"
@@ -43,19 +22,286 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/circle.css" />
-    <script type="text/javascript" src="js/slick.min.js"></script>
-  </head>
-  <body>
-    <div class="firstpart">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+    
+<style>
+
+.mylogo {
+      width: 50px;
+      height: 50px;
+    }
+    .mainmenu {
+      display: inline-block;
+      position: relative;
+      color: #E3D7FE;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Muli", sans-serif;
+      padding: 25px 0;
+      margin-left: 25px;
+    }
+    .mainmenu a{color:#E3D7FE ;
+      text-decoration: none;}
+    .singbtn {
+      width: 170px !important;
+      padding: 20px !important;
+      line-height: 15px !important;
+      color: #753ffa !important;
+      font-size: 20px !important;
+    }
+    .singbtn:hover{
+      border: 1px solid white;
+      color: white !important;
+      background-color: transparent;
+    }
+    .searcebtn {
+      border: none;
+      background: none;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    .menuitem {
+      position: absolute;
+      background: white;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.144);
+      border-radius: 5px;
+      z-index: 1;
+      box-sizing: border-box;
+      left: 0;
+      top: 90px;
+      width: 350px;
+      transition-duration: 0.4s;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .mainmenu:hover .menuitem {
+      top: 70px;
+      visibility: visible;
+      opacity: 1;
+    }
+   .links{padding-top: 10px;
+      padding-bottom: 10px;}
+    .links a{
+      margin-left: -15px;
+      padding: 5px;
+    color: #5d58f7;
+    font-size: 14px;
+    font-weight: 400;
+    transition-duration: 0.5s;
+      
+    }
+    .links a:hover{margin-left: 5px;}
+    .discdiv {
+      border-left: 5px solid white;
+      padding-left: 15px;
+      margin-top: 100px;
+    }
+    .discdivhead {
+      font: size 40px;
+      color: white;
+    }
+    .discdiv a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+      transition-duration: 0.5s;
+    }
+    .discdiv a:hover {
+      color: #c0beff;
+    }
+
+    .headnav{border: 1px solid rgb(231, 230, 230);
+    
+  z-index: 9;}
+  .headnavlinks{text-decoration: none !important;
+  color: white !important;
+font-size: 15px !important;
+font-weight: bold !important;
+padding-left: 10px !important;}
+.dropdownlistl{background-color: #7C54F3;}
+.dropdownlistl a{text-decoration: none !important;
+color: white;}
+.dropdownlistl a:hover{text-decoration: none !important;
+background-color: transparent;
+color: white;}
+    @media screen and (min-width: 990px) {
+    nav {
+        display: none !important;
+    }}
+    @media screen and (max-width: 990px) {
+    .headbar {
+        display: none !important;
+    }
+}
+.posrel{position: relative;}
+.poabs2{position: absolute;
+  background-color: #7C54F3;
+  z-index: 9;
+  
+
+top: 60px;}
+
+.fixed {position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #7C49FB;
+z-index: 9;
+animation-name: fadeInDown2;
+animation-duration: 0.5s;
+transition-duration: 0.3;}
+
+@keyframes fadeInDown2 {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+.backmodal {
+        background-color: rgba(23, 26, 33, 0.95);
+        z-index: 999999;
+      }
+
+      .modalsinput {
+        position: relative;
+        width: 100%;
+        font-size: 36px;
+        border: none;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+        background: 0 0;
+        color: Black;
+        padding-bottom: 12px;
+        padding-right: 40px;
+      }
+      .sbtnposabs {
+        position: absolute;
+        top: 15%;
+        right: 40px;
+        font-size: 30px;
+        color: #5d58f7;
+        border: transparent;
+        background-color: transparent;
+      }
+      .modalsinput:focus {
+        outline: none;
+      }
+</style>
+</head>
+<body>
+<div class="firstpart">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light  posrel">
+        <div class="mylogo">
+            <a href="#">
+              <img
+                src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse poabs2 w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            
+            <li class="nav-item dropdown headnav ">
+              <a class="nav-link dropdown-toggle headnavlinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home
+              </a>
+              <div class="dropdown-menu dropdownlistl " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html">Home 1</a>
+                <a class="dropdown-item" href="home2.html">Home 2</a>
+                
+                <a class="dropdown-item" href="home3.html">Home 3</a>
+              </div>
+            </li>
+            <li class="nav-item headnav pt-2 pb-2">
+                <a href="services.html" tabindex="-1" aria-disabled="true" class="headnavlinks">Services</a>
+              </li>
+            <li class="nav-item dropdown headnav">
+              <a class="nav-link dropdown-toggle headnavlinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portofolio
+              </a>
+              <div class="dropdown-menu dropdownlistl" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="P2column.html">Portofolio 2 columns</a>
+                <a class="dropdown-item" href="P3column.html">Portofolio 3 columns</a>
+                
+                <a class="dropdown-item" href="P4column.html">Portofolio 4 columns</a>
+                <a class="dropdown-item" href="p3columnFW.html">Portofolio 3 columns full width</a>
+                <a class="dropdown-item" href="P4columnFW.html">Portofolio 4 columns full width</a>
+                <a class="dropdown-item" href="P3columnstyle.html">Portofolio 3 columns style 2</a>
+                <a class="dropdown-item" href="P4columnstyle.html">Portofolio 4 columns style 2</a>
+                <a class="dropdown-item" href="PM2column.html">Portofolio 2 columns Masonary</a>
+                <a class="dropdown-item" href="PM3column.html">Portofolio 3 columns Masonary </a>
+                <a class="dropdown-item" href="PM3columngutter.html">Portofolio 3 columns No cutter</a>
+                <a class="dropdown-item" href="P3columnstyleFW.html">style 2 columns 3 full width</a>
+                <a class="dropdown-item" href="P4columnstyleFW.html">style 2 columns 4 full width</a>
+               
+                <a class="dropdown-item" href="Pdetailes.html">Portofolio details</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown headnav">
+              <a class="nav-link dropdown-toggle headnavlinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu dropdownlistl" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About us</a>
+                <a class="dropdown-item" href="#">Pricing plane</a>
+                
+                <a class="dropdown-item" href="#">Our team</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown headnav">
+              <a class="nav-link dropdown-toggle headnavlinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdownlistl" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Blog gride side bar</a>
+                <a class="dropdown-item" href="#">Blog masaonary</a>
+                
+                <a class="dropdown-item" href="#">Blog masaonary side bar</a>
+                <a class="dropdown-item" href="#">Blog list</a>
+                <a class="dropdown-item" href="#">Blog details</a>
+              </div>
+            </li>
+            <li class="nav-item headnav pt-2 pb-2">
+              <a href="#" tabindex="-1" aria-disabled="true" class="headnavlinks">Contact US</a>
+            </li>
+          </ul>
+         
+        </div>
+      </nav>
+    </div>
       <div class="container">
         <div class="row pt-3">
+
+            
+
           <div class="col-12 headbar pt-2">
             <div class="row">
-              <div class="col-2">
+              <div class="col-1">
                 <div class="mylogo">
                   <a href="#">
                     <img
@@ -65,89 +311,96 @@
                   </a>
                 </div>
               </div>
-              <div class="col-7">
+
+
+              
+              
+              <div class="col-lg-8 col-10">
                 <ul>
                   <li class="mainmenu">
                     <a class="mainadress" href="#">Home</a>
                     <ul class="menuitem">
                       <li class="links">
-                        <a href="maine_page.html">Home one</a>
+                        <a href="index.html">Home one</a>
                       </li>
-                      <li class="links"><a href="#"></a>Home two</li>
-                      <li class="links"><a href="#"></a>Home three</li>
+                      <li class="links"><a href="home2.html">Home two</a></li>
+                      <li class="links"><a href="home3.html">Home three</a></li>
                     </ul>
                   </li>
                   <li class="mainmenu">
-                    <a class="mainadress" href="#">Sevices</a>
+                    <a class="mainadress" href="services.html">Sevices</a>
                   </li>
                   <li class="mainmenu">
                     <a class="mainadress" href="#">Portofolio</a>
                     <ul class="menuitem">
                       <li class="links">
-                        <a href="#"></a>Portofolio 2 columns
+                        <a href="P2column.html"> Portofolio 2 columns </a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 3 columns
+                        <a href="P3column.html">portofolio 3 columns</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 4 columns
+                        <a href="P4column.html">portofolio 4 columns</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 3 columns full width
+                        <a href="P3columnFW.html">portofolio 3 columns full width</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 4 columns full width
+                        <a href="P4columnFW.html">portofolio 4 columns full width</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 3 columns style 2
+                        <a href="P3columnstyle.html">portofolio 3 columns style 2</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 4 columns style 2
+                        <a href="P4columnstyle.html">portofolio 4 columns style 2</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 2 columns masonary
+                        <a href="PM2column.html">portofolio 2 columns masonary</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>portofolio 3 columns masonry
+                        <a href="PM3column.html">portofolio 3 columns masonry</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>Masonry 3 columns No Gutter
+                        <a href="PM3columngutter.html">Masonry 3 columns No Gutter</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>Style 2 column 3 full width
+                        <a href="P3columnstyleFW.html">Style 2 column 3 full width</a>
                       </li>
                       <li class="links">
-                        <a href="#"></a>Style 2 column 4 full width
+                        <a href="P4columnstyleFW.html">Style 2 column 4 full width</a>
                       </li>
-                      <li class="links"><a href="#"></a>portofolio Detailes</li>
+                      <li class="links"><a href="Pdetailes.html">portofolio Detailes</a></li>
                     </ul>
                   </li>
                   <li class="mainmenu">
                     <a class="mainadress" href="#">Pages</a>
                     <ul class="menuitem">
-                      <li class="links"><a href="#"></a>About us</li>
-                      <li class="links"><a href="#"></a>Pricing plan</li>
-                      <li class="links"><a href="#"></a>Our team</li>
+                      <li class="links"><a href="about.html">About us</a></li>
+                      <li class="links"><a href="pricing.html">Pricing plan</a></li>
+                      <li class="links"><a href="team.html">Our team</a></li>
                     </ul>
                   </li>
                   <li class="mainmenu">
                     <a class="mainadress" href="#">Blog</a>
                     <ul class="menuitem">
-                      <li class="links"><a href="#"></a>Blog bride sidebar</li>
-                      <li class="links"><a href="#"></a>Blog masonary</li>
+                      <li class="links"><a href="Bsidebar.html">Blog bride sidebar</a></li>
+                      <li class="links"><a href="Bmasonary.html">Blog masonary</a></li>
                       <li class="links">
-                        <a href="#"></a>Blog masonary sidebar
+                        <a href="BMsidebar.html">Blog masonary sidebar</a>
                       </li>
-                      <li class="links"><a href="#"></a>Blog Detailes</li>
+                      <li class="links">
+                        <a href="Blist.html">Blog List</a>
+                      </li>
+                      <li class="links"><a href="Bdetails.html">Blog Detailes</a></li>
                     </ul>
                   </li>
                   <li class="mainmenu">
-                    <a class="mainadress" href="#">Contact us</a>
+                    <a class="mainadress" href="contactus.html">Contact us</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-3 text-right mt-2">
-                <button class="searcebtn pr-3">
+              <div class="col-lg-3 d-none d-xl-block text-right mt-2">
+                <button class="searcebtn pr-3" data-target="#searchmodal" data-toggle="modal">
                   <svg
                     class="bi bi-search text-light"
                     width="1.5em"
@@ -177,1021 +430,1121 @@
         </div>
       </div>
       <div class="container">
-        <div class="row align-items-center paddtop">
-          <div class="col-xl-6 co-lg-7 co-md-12">
-            <p class="text-light fontp wow fadeInUp" data-wow-duration="0.6s">
-              Digital Agency behind
-            </p>
-            <h2
-              class="text-light font-weight-bold fontp2 wow fadeInUp"
-              data-wow-duration="0.6s"
-              data-wow-delay="0.3s"
-            >
-              Startup Business
-            </h2>
-            <p
-              class="text-light font-weight-bold pt-3 wow fadeInUp"
-              data-wow-duration="0.6s"
-              data-wow-delay="0.5s"
-            >
-              There are many variations of passages of Lorem Ipsum available but
-              at the majority have suffered alteration in that some form by
-              injected to humour that randomised words.
-            </p>
-            <button
-              class="btn btnread wow fadeInUp"
-              data-wow-duration="0.6s"
-              data-wow-delay="0.7s"
-            >
-              Reade more
-            </button>
-          </div>
-          <div
-            class="col-xl-6 col-lg-5 d-none d-xl-block wow fadeInRightBig"
-            data-wow-duration="1.5s"
-          >
-            <div>
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/slider/slider_img.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="secondpart">
-      <div class="container">
-        <div class="row align-items-center secondpadd">
-          <div
-            class="col-lg-5 col-md-12 col-xs-12 animated wow bounceInLeft"
-            data-wow-duration="1s"
-          >
-            <div class="secondimgmrg">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/services/services_iimg.png"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-12 col-xs-12">
-            <div>
-              <h2
-                class="secondhead animated wow fadeInUp"
-                data-wow-duration="0.5s"
-                data-wow-delay="0.1s"
-              >
-                Start to end
-              </h2>
-              <h2
-                class="secondhead animated wow fadeInUp"
-                data-wow-duration="0.5s"
-                data-wow-delay="0.3s"
-              >
-                app development agency
-              </h2>
-              <p
-                class="secondp animated wow fadeInUp"
-                data-wow-duration="0.5s"
-                data-wow-delay="0.5s"
-              >
-                here are many variations of passages of Lorem Ipsum available
-                but the majority have and suffered alteration in that some form
-                by injected humour or randomised words which the don't look even
-                slightly believable. If you are going a to use a passage of
-                Lorem Ipsum you need to be sure there isn't anything
-                embarrassing.
-              </p>
-              <p
-                class="secondp animated wow fadeInUp"
-                data-wow-duration="0.5s"
-                data-wow-delay="0.7s"
-              >
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have very suffered alteration in that some form
-                by injected humour or randomised words which the don't look even
-                slightly believable.
-              </p>
-            </div>
-            <button
-              class="btn secondbtn animated wow bounceInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.9s"
-            >
-              More about us
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="thirdpart">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12 paddbt2">
-            <p
-              class="secondp2 animated wow fadeInUp"
-              data-wow-duration="0.5s"
-              data-wow-delay="0.5s"
-            >
-              Features
-            </p>
-            <h2
-              class="secondh2 animated wow fadeInUp"
-              data-wow-duration="0.5s"
-              data-wow-delay="0.7s"
-            >
-              Some Of The Best Features
-            </h2>
-
-            <p
-              class="secondp3 animated wow fadeInUp"
-              data-wow-duration="0.5s"
-              data-wow-delay="0.9s"
-            >
-              "There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration some randomised words
-              which don't look even slightly believable."
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="forthpart">
-      <div class="container">
-        <div class="row paddbt4">
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.2s"
-          >
-            <div class="text-center pt-3">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon01.png"
-                alt=""
-              />
-            </div>
-            <h4 class="text-center pt-3"><a href="#">Expand Your Reach</a></h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
-            </p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
-            data-wow-duration="0.5s"
+      <div class="row align-items-center paddtop">
+        <div class="col-xl-6 co-lg-7 co-md-12">
+          <p class="text-light fontp wow fadeInUp" data-wow-duration="0.6s">
+            Digital Agency behind
+          </p>
+          <h2
+            class="text-light font-weight-bold fontp2 wow fadeInUp"
+            data-wow-duration="0.6s"
             data-wow-delay="0.3s"
           >
-            <div class="text-center pt-3">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon02.png"
-                alt=""
-              />
-            </div>
-            <h4 class="text-center pt-3"><a href="#">Higher Growth Rate</a></h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
-            </p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.4s"
+            Startup Business
+          </h2>
+          <p
+            class="text-light font-weight-bold pt-3 wow fadeInUp"
+            data-wow-duration="0.6s"
+            data-wow-delay="0.5s"
           >
-            <div class="text-center pt-3">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon03.png"
-                alt=""
-              />
-            </div>
-            <h4 class="text-center pt-3">
-              <a href="#">Manage Your Customer</a>
-            </h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
+            There are many variations of passages of Lorem Ipsum available but
+            at the majority have suffered alteration in that some form by
+            injected to humour that randomised words.
+          </p>
+          <button
+            class=" btnread wow fadeInUp"
+            data-wow-duration="0.6s"
+            data-wow-delay="0.7s"
+          >
+            Reade more
+          </button>
+        </div>
+        <div
+          class="col-xl-6 col-lg-5 d-none d-xl-block wow fadeInRightBig"
+          data-wow-duration="1.5s"
+        >
+          <div>
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/slider/slider_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondpart">
+    <div class="container">
+      <div class="row align-items-center secondpadd">
+        <div
+          class="col-lg-5 col-md-12 col-xs-12 animated wow bounceInLeft"
+          data-wow-duration="1s"
+        >
+          <div class="secondimgmrg">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/services/services_iimg.png"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-xs-12">
+          <div>
+            <h2
+              class="secondhead animated wow fadeInUp"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.1s"
+            >
+              Start to end
+            </h2>
+            <h2
+              class="secondhead animated wow fadeInUp"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.3s"
+            >
+              app development agency
+            </h2>
+            <p
+              class="secondp animated wow fadeInUp"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
+            >
+              here are many variations of passages of Lorem Ipsum available
+              but the majority have and suffered alteration in that some form
+              by injected humour or randomised words which the don't look even
+              slightly believable. If you are going a to use a passage of
+              Lorem Ipsum you need to be sure there isn't anything
+              embarrassing.
+            </p>
+            <p
+              class="secondp animated wow fadeInUp"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.7s"
+            >
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have very suffered alteration in that some form
+              by injected humour or randomised words which the don't look even
+              slightly believable.
             </p>
           </div>
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          <button
+            class=" secondbtn animated wow fadeInLeft"
+            data-wow-duration="0.8s"
+            data-wow-delay="0.9s"
+          >
+            More about us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="thirdpart">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 paddbt2">
+          <p
+            class="secondp2 animated wow fadeInUp"
             data-wow-duration="0.5s"
             data-wow-delay="0.5s"
           >
-            <div class="text-center pt-3">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon04.png"
-                alt=""
-              />
-            </div>
-            <h4 class="text-center pt-3"><a href="#">Book Your Provider</a></h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
-            </p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.6s"
-          >
-            <div class="text-center pt-3">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon05.png"
-                alt=""
-              />
-            </div>
-            <h4 class="text-center pt-3"><a href="#">Market Analysis</a></h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
-            </p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+            Features
+          </p>
+          <h2
+            class="secondh2 animated wow fadeInUp"
             data-wow-duration="0.5s"
             data-wow-delay="0.7s"
           >
-            <div class="text-center pt-3">
+            Some Of The Best Features
+          </h2>
+
+          <p
+            class="secondp3 animated wow fadeInUp"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.9s"
+          >
+            "There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration some randomised words
+            which don't look even slightly believable."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forthpart">
+    <div class="container">
+      <div class="row paddbt4">
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.2s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon01.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3"><a href="#">Expand Your Reach</a></h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.3s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon02.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3"><a href="#">Higher Growth Rate</a></h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.4s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon03.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3">
+            <a href="#">Manage Your Customer</a>
+          </h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.5s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon04.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3"><a href="#">Book Your Provider</a></h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.6s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon05.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3"><a href="#">Market Analysis</a></h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-xs-12 animated wow fadeInUp"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.7s"
+        >
+          <div class="text-center pt-3">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon06.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-center pt-3">
+            <a href="#">Creative Web Solution</a>
+          </h4>
+          <p class="text-center pt-3">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in that injected.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fifth">
+    <div class="opabackground">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 d-none d-xl-block positiondiv">
+            <div class="positionimg">
               <img
-                src="http://pluginspoint.com/demo/html/digee/img/icon/features_icon06.png"
+                src="http://pluginspoint.com/demo/html/digee/img/bg/counter_img.png"
                 alt=""
               />
             </div>
-            <h4 class="text-center pt-3">
-              <a href="#">Creative Web Solution</a>
-            </h4>
-            <p class="text-center pt-3">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in that injected.
+          </div>
+          <div class="col-xl-6 col-lg-8 col-md-12">
+            <div class="container">
+              <div class="row align-items-center paddtop widecount">
+                <div class="col-lg-4 col-md-12 progresscount">
+                  <div class=" wow fadeInUp progressin" >248</div>
+                </div>
+                <div
+                  class="col-xl-4 col-lg-4 col-md-12 progresscount wow fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <div class=" wow fadeInUp progressin" >39</div>
+                </div>
+                <div
+                  class="col-xl-4 col-lg-4 col-md-12 progresscount wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <div class=" wow fadeInUp progressin" >575</div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partsix">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div>
+            <h2 class="font-weight-bold headsixpart">
+              Why We Are Different Digital agency
+            </h2>
+            <p class="discsix">
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have suffered alteration in that injected.
+              There are many variations of passages.
+            </p>
+            <p class="discsix">
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have suffered alteration in that injected.
+              There are many variations of passages. There are many variations
+              of passages of Lorem Ipsum available but the majority have the
+              at suffered alteration in that injected.
+            </p>
+            <button class="btnsix">Reed More</button>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-12 text-left animate wow fadeInRightBig"
+          data-wow-duration="2s"
+        >
+          <div>
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/bg/da_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partseven">
+    <div class="container">
+      <div class="row align-items-center">
+        <div
+          class="col-xl-6 col-lg-12 animated wow fadeInLeftBig text-left"
+          data-wow-duration="2s"
+        >
+          <div>
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/bg/optimize_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-12">
+          <div class="discbackseven">
+            <h2 class="headseven">Spend Optimization Our Software easily</h2>
+            <p class="discseven">
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have suffered alteration in that injected.
+            </p>
+            <p class="discseven">
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have suffered alteration in that injected.
+              There are many that variations of passages.There are many
+              variations of passages of Lorem Ipsum available but the majority
+              have suffered.
+            </p>
+            <div
+              class="imgdivseven animated wow fadeInUp"
+              data-wow-duration="0.5s"
+            >
+              <img
+                src="http://pluginspoint.com/demo/html/digee/img/icon/optimize_icon01.png"
+                alt=""
+              />
+              <h2 class="font-weight-bold pl-3">Get insight only our app</h2>
+            </div>
+            <p
+              class="discseven animated wow fadeInUp"
+              data-wow-duration="0.5s"
+            >
+              There are many variations of passages of Lorem Ipsum available
+              but at the majority have suffered alteration in that injected.
+            </p>
+            <div
+              class="imgdivseven animated wow fadeInUp"
+              data-wow-duration="0.5"
+              data-wow-delay="0.3s"
+            >
+              <img
+                src="http://pluginspoint.com/demo/html/digee/img/icon/optimize_icon02.png"
+                alt=""
+              />
+              <h2 class="font-weight-bold pl-3">Make your data work</h2>
+            </div>
+            <p
+              class="discseven animated wow fadeInUp"
+              data-wow-duration="0.5"
+              data-wow-delay="0.3s"
+            >
+              There are many variations of passages of Lorem Ipsum available
+              but at the majority have suffered alteration in that injected.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="fifth">
-      <div class="opabackground">
-        <div class="container">
+  </div>
+  <div class="mainslider">
+    <div class="container">
+      <div class="row">
+        <div class="contentwords align-items-center col-12">
+          <div class="col-12">
+            <h3 class="text-center slidehead1">Our Clients</h3>
+          </div>
+          <div class="col-12">
+            <h2 class="text-dark text-center slidehead2">Testimonials</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="widslider text-center mx-auto">
+              <p class="text-dark pragraphslide">
+                There are many variations of passages of Lorem Ipsum available
+                but the and majority to have suffered alteration in some form
+                by injected humour the words which don't look even slightly.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 text-center pt-5">
+            <i
+              class="fa fa-star checked"
+              style="font-size: 24px; color: gold;"
+            ></i>
+            <i
+              class="fa fa-star checked"
+              style="font-size: 24px; color: gold;"
+            ></i>
+            <i
+              class="fa fa-star checked"
+              style="font-size: 24px; color: gold;"
+            ></i>
+            <i
+              class="fa fa-star checked"
+              style="font-size: 24px; color: gold;"
+            ></i>
+            <i
+              class="fa fa-star checked"
+              style="font-size: 24px; color: gold;"
+            ></i>
+          </div>
+          <div class="col-12 text-center pt-3">
+            <span><b>David Martin</b> CEO, Creative Idea</span>
+          </div>
+        </div>
+
+        <div class="slickslider col-12">
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar.png"
+              alt=""
+            />
+          </div>
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar01.png"
+              alt=""
+            />
+          </div>
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar02.png"
+              alt=""
+            />
+          </div>
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar.png"
+              alt=""
+            />
+          </div>
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar01.png"
+              alt=""
+            />
+          </div>
+          <div class="item text-center">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar02.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="arrow-prev d-none d-xl-block">
+          <button style="font-size: 24px;">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="arrow-next d-none d-xl-block">
+          <button style="font-size: 24px;">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="eightpart">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-xl-6 col-lg-12">
+          <h2
+            class="head2eight wow animated fadeInUp"
+            data-wow-duration="0.7s"
+          >
+            Creative Agency
+            <br />
+            From New York - USA
+            <br />
+            in 30 years.
+          </h2>
+
+          <p
+            class="eightp wow animated fadeInUp"
+            data-wow-duration="0.7s"
+            data-wow-delay="0.2s"
+          >
+            There are many variations of passages of Lorem Ipsum available but
+            the our majority have suffered alteration in that injected. There
+            are many variations of passages of Lorem Ipsum available.
+          </p>
+
           <div class="row">
-            <div class="col-xl-6 d-none d-xl-block positiondiv">
-              <div class="positionimg">
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/bg/counter_img.png"
-                  alt=""
-                />
+            <div
+              class="col-lg-6 col-md-12 wow animated fadeInLeft"
+              data-wow-duration="0.7"
+              data-wow-delay="0.3s"
+            >
+              <div class="presentegdiv">
+                <div class="card1">
+                  <div class="box">
+                    <div class="percent">
+                      <svg class="firstsvg">
+                        <circle cx="40" cy="40" r="40"></circle>
+                        <circle cx="40" cy="40" r="40"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2 class="precenth2">69<sup>%</sup></h2>
+                      </div>
+                    </div>
+                    <h3 class="precenttext text-center">
+                      WordPress Developer
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-8 col-md-12">
-              <div class="container">
-                <div class="row align-items-center paddtop widecount">
-                  <div class="col-lg-4 col-md-12 progresscount">
-                    <div class="animated wow fadeInUp progressin">248</div>
+            <div
+              class="col-lg-6 col-md-12 wow animated fadeInRight"
+              data-wow-duration="0.7"
+              data-wow-delay="0.4s"
+            >
+              <div class="presentegdiv">
+                <div class="card2">
+                  <div class="box">
+                    <div class="percent">
+                      <svg class="firstsvg">
+                        <circle cx="40" cy="40" r="40"></circle>
+                        <circle cx="40" cy="40" r="40"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2 class="precenth2">93<sup>%</sup></h2>
+                      </div>
+                    </div>
+                    <h3 class="precenttext text-center">Apps Developer</h3>
                   </div>
-                  <div
-                    class="col-xl-4 col-lg-4 col-md-12 progresscount wow fadeInUp"
-                    data-wow-delay="0.3s"
-                  >
-                    <div class="animated wow fadeInUp progressin">39</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-md-12 wow animated fadeInUp"
+              data-wow-duration="0.7"
+              data-wow-delay="0.5s"
+            >
+              <div class="presentegdiv">
+                <div class="card3">
+                  <div class="box">
+                    <div class="percent">
+                      <svg class="firstsvg">
+                        <circle cx="40" cy="40" r="40"></circle>
+                        <circle cx="40" cy="40" r="40"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2 class="precenth2">76<sup>%</sup></h2>
+                      </div>
+                    </div>
+                    <h3 class="precenttext text-center">Android Apps</h3>
                   </div>
-                  <div
-                    class="col-xl-4 col-lg-4 col-md-12 progresscount wow fadeInUp"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="animated wow fadeInUp progressin">575</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-md-12 wow animated fadeInRight"
+              data-wow-duration="0.7"
+              data-wow-delay="0.6s"
+            >
+              <div class="presentegdiv">
+                <div class="card4">
+                  <div class="box">
+                    <div class="percent">
+                      <svg class="firstsvg">
+                        <circle cx="40" cy="40" r="40"></circle>
+                        <circle cx="40" cy="40" r="40"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2 class="precenth2">89<sup>%</sup></h2>
+                      </div>
+                    </div>
+                    <h3 class="precenttext text-center">iSO Apps</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="partsix">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12">
-            <div>
-              <h2 class="font-weight-bold headsixpart">
-                Why We Are Different Digital agency
-              </h2>
-              <p class="discsix">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in that injected.
-                There are many variations of passages.
-              </p>
-              <p class="discsix">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in that injected.
-                There are many variations of passages. There are many variations
-                of passages of Lorem Ipsum available but the majority have the
-                at suffered alteration in that injected.
-              </p>
-              <button class="btnsix">Reed More</button>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 col-md-12 text-left animate wow fadeInRightBig"
-            data-wow-duration="2s"
-          >
-            <div>
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/bg/da_img.png"
-                alt=""
-              />
-            </div>
+        <div
+          class="col-lg-6 col-md-12 wow animated fadeInRight pt-5"
+          data-wow-duration="0.7"
+          data-wow-delay="0.4s"
+        >
+          <div>
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/bg/skill_img.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </div>
-    <div class="partseven">
-      <div class="container">
-        <div class="row align-items-center">
-          <div
-            class="col-xl-6 col-lg-12 animated wow fadeInLeftBig text-left"
-            data-wow-duration="2s"
-          >
-            <div>
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/bg/optimize_img.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-12">
-            <div class="discbackseven">
-              <h2 class="headseven">Spend Optimization Our Software easily</h2>
-              <p class="discseven">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in that injected.
-              </p>
-              <p class="discseven">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in that injected.
-                There are many that variations of passages.There are many
-                variations of passages of Lorem Ipsum available but the majority
-                have suffered.
-              </p>
-              <div
-                class="imgdivseven animated wow fadeInUp"
-                data-wow-duration="0.5s"
-              >
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/icon/optimize_icon01.png"
-                  alt=""
-                />
-                <h2 class="font-weight-bold pl-3">Get insight only our app</h2>
-              </div>
-              <p
-                class="discseven animated wow fadeInUp"
-                data-wow-duration="0.5s"
-              >
-                There are many variations of passages of Lorem Ipsum available
-                but at the majority have suffered alteration in that injected.
-              </p>
-              <div
-                class="imgdivseven animated wow fadeInUp"
-                data-wow-duration="0.5"
-                data-wow-delay="0.3s"
-              >
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/icon/optimize_icon02.png"
-                  alt=""
-                />
-                <h2 class="font-weight-bold pl-3">Make your data work</h2>
-              </div>
-              <p
-                class="discseven animated wow fadeInUp"
-                data-wow-duration="0.5"
-                data-wow-delay="0.3s"
-              >
-                There are many variations of passages of Lorem Ipsum available
-                but at the majority have suffered alteration in that injected.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="ninepart">
+    <div class="tree1">
+      <img
+        src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape01.png"
+        alt=""
+      />
     </div>
-    <div class="mainslider">
-      <div class="container">
-        <div class="row">
-          <div class="contentwords align-items-center col-12">
-            <div class="col-12">
-              <h3 class="text-center slidehead1">Our Clients</h3>
-            </div>
-            <div class="col-12">
-              <h2 class="text-dark text-center slidehead2">Testimonials</h2>
-            </div>
+    <div class="tree2">
+      <img
+        src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape02.png"
+        alt=""
+      />
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12 pt-3">
+          <h2 class="head2nine text-light">
+            We help to grow creativity<br />
+            that Break rules
+          </h2>
+          <p class="discnine text-light">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have<br />
+            suffered alteration in some form, by injected humour.
+          </p>
+        </div>
 
+        <div class="col-lg-4 col-md-12 movinleft">
+          <button class=" btnnine">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="tree3">
+      <img
+        src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape03.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="partten">
+    <p class="firstpten text-center">Read Our</p>
+    <h2 class="headten text-center">Latest News</h2>
+    <p class="secondpten text-center">
+      There are many variations of passages of Lorem Ipsum available but the
+      majority have suffered alteration<br />
+      some randomised words which don't look even slightly believable.
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="bordeone pt-5">
+            
+              <img
+                src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb07.jpg"
+               style="width: 100%;
+               margin-top: -50px;"
+              />
+            
             <div class="col-12">
-              <div class="widslider text-center mx-auto">
-                <p class="text-dark pragraphslide">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the and majority to have suffered alteration in some form
-                  by injected humour the words which don't look even slightly.
+              <div class="disccontent">
+                <h2 class="ancorten">
+                  <a class="ancorh2ten" href="#"
+                    >How to become a best sale marketer in a years</a
+                  >
+                </h2>
+                <p class="discten">
+                  There are many variations of passages of at Lorem Ipsum
+                  available but the majority the have suffered alteration.
                 </p>
               </div>
             </div>
-            <div class="col-12 text-center pt-5">
-              <i
-                class="fa fa-star checked"
-                style="font-size: 24px; color: gold;"
-              ></i>
-              <i
-                class="fa fa-star checked"
-                style="font-size: 24px; color: gold;"
-              ></i>
-              <i
-                class="fa fa-star checked"
-                style="font-size: 24px; color: gold;"
-              ></i>
-              <i
-                class="fa fa-star checked"
-                style="font-size: 24px; color: gold;"
-              ></i>
-              <i
-                class="fa fa-star checked"
-                style="font-size: 24px; color: gold;"
-              ></i>
-            </div>
-            <div class="col-12 text-center pt-3">
-              <span><b>David Martin</b> CEO, Creative Idea</span>
+            <div class="col-12">
+              <div class="imgten">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar01.png"
+                  alt=""
+                />
+                <a class="emplink" href="#">Toby Halvorson</a>
+                <span> June 16, 2018</span>
+                <a class="empshare" href="#"
+                  ><i class="fas fa-share-alt"></i
+                ></a>
+              </div>
             </div>
           </div>
-
-          <div class="slickslider col-12">
-            <div class="item text-center">
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="bordeone pt-5">
+            
               <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar.png"
-                alt=""
+                src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb02.jpg"
+                style="width: 100%;
+                margin-top: -50px;"
               />
+            
+            <div class="col-12">
+              <div class="disccontent">
+                <h2 class="ancorten">
+                  <a class="ancorh2ten" href="#"
+                    >How to become a best sale marketer in a years</a
+                  >
+                </h2>
+                <p class="discten">
+                  There are many variations of passages of at Lorem Ipsum
+                  available but the majority the have suffered alteration.
+                </p>
+              </div>
             </div>
-            <div class="item text-center">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar01.png"
-                alt=""
-              />
-            </div>
-            <div class="item text-center">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar02.png"
-                alt=""
-              />
-            </div>
-            <div class="item text-center">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar.png"
-                alt=""
-              />
-            </div>
-            <div class="item text-center">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar01.png"
-                alt=""
-              />
-            </div>
-            <div class="item text-center">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/testimonail/testi_avatar02.png"
-                alt=""
-              />
+            <div class="col-12">
+              <div class="imgten">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar02.png"
+                  alt=""
+                />
+                <a class="emplink" href="#"> Darion Koepp</a>
+                <span> June 16, 2018</span>
+                <a class="empshare" href="#"
+                  ><i class="fas fa-share-alt"></i
+                ></a>
+              </div>
             </div>
           </div>
-          <div class="arrow-prev d-none d-xl-block">
-            <button style="font-size: 24px;">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-          </div>
-          <div class="arrow-next d-none d-xl-block">
-            <button style="font-size: 24px;">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="bordeone pt-5">
+            
+              <img
+                src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb03.jpg"
+                style="width: 100%;
+               margin-top: -50px;"
+              />
+            
+            <div class="col-12">
+              <div class="disccontent">
+                <h2 class="ancorten">
+                  <a class="ancorh2ten" href="#"
+                    >How to become a best sale marketer in a years</a
+                  >
+                </h2>
+                <p class="discten">
+                  There are many variations of passages of at Lorem Ipsum
+                  available but the majority the have suffered alteration.
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgten">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar02.png"
+                  alt=""
+                />
+                <a class="emplink" href="#">Toby Halvorson</a>
+                <span> June 16, 2018</span>
+                <a class="empshare" href="#"
+                  ><i class="fas fa-share-alt"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="eightpart">
-      <div class="container">
-        <div class="row align-items-end">
-          <div class="col-xl-6 col-lg-12">
-            <h2
-              class="head2eight wow animated fadeInUp"
-              data-wow-duration="0.7s"
-            >
-              Creative Agency
-              <br />
-              From New York - USA
-              <br />
-              in 30 years.
-            </h2>
-
-            <p
-              class="eightp wow animated fadeInUp"
-              data-wow-duration="0.7s"
-              data-wow-delay="0.2s"
-            >
-              There are many variations of passages of Lorem Ipsum available but
-              the our majority have suffered alteration in that injected. There
-              are many variations of passages of Lorem Ipsum available.
-            </p>
-
-            <div class="row">
-              <div
-                class="col-lg-6 col-md-12 wow animated fadeInLeft"
-                data-wow-duration="0.7"
-                data-wow-delay="0.3s"
-              >
-                <div class="presentegdiv">
-                  <div class="card1">
-                    <div class="box">
-                      <div class="percent">
-                        <svg class="firstsvg">
-                          <circle cx="40" cy="40" r="40"></circle>
-                          <circle cx="40" cy="40" r="40"></circle>
-                        </svg>
-                        <div class="number">
-                          <h2 class="precenth2">69<sup>%</sup></h2>
-                        </div>
-                      </div>
-                      <h3 class="precenttext text-center">
-                        WordPress Developer
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 col-md-12 wow animated fadeInRight"
-                data-wow-duration="0.7"
-                data-wow-delay="0.4s"
-              >
-                <div class="presentegdiv">
-                  <div class="card2">
-                    <div class="box">
-                      <div class="percent">
-                        <svg class="firstsvg">
-                          <circle cx="40" cy="40" r="40"></circle>
-                          <circle cx="40" cy="40" r="40"></circle>
-                        </svg>
-                        <div class="number">
-                          <h2 class="precenth2">93<sup>%</sup></h2>
-                        </div>
-                      </div>
-                      <h3 class="precenttext text-center">Apps Developer</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 col-md-12 wow animated fadeInUp"
-                data-wow-duration="0.7"
-                data-wow-delay="0.5s"
-              >
-                <div class="presentegdiv">
-                  <div class="card3">
-                    <div class="box">
-                      <div class="percent">
-                        <svg class="firstsvg">
-                          <circle cx="40" cy="40" r="40"></circle>
-                          <circle cx="40" cy="40" r="40"></circle>
-                        </svg>
-                        <div class="number">
-                          <h2 class="precenth2">76<sup>%</sup></h2>
-                        </div>
-                      </div>
-                      <h3 class="precenttext text-center">Android Apps</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 col-md-12 wow animated fadeInRight"
-                data-wow-duration="0.7"
-                data-wow-delay="0.6s"
-              >
-                <div class="presentegdiv">
-                  <div class="card4">
-                    <div class="box">
-                      <div class="percent">
-                        <svg class="firstsvg">
-                          <circle cx="40" cy="40" r="40"></circle>
-                          <circle cx="40" cy="40" r="40"></circle>
-                        </svg>
-                        <div class="number">
-                          <h2 class="precenth2">89<sup>%</sup></h2>
-                        </div>
-                      </div>
-                      <h3 class="precenttext text-center">iSO Apps</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  </div>
+  <div class="parteleven">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="secondslider col-12">
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+              alt=""
+            />
           </div>
-          <div
-            class="col-lg-6 col-md-12 wow animated fadeInRight pt-5"
-            data-wow-duration="0.7"
-            data-wow-delay="0.4s"
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
+              alt=""
+            />
+          </div>
+          <div class="seconditem">
+            <img
+              src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-12">
+          <div class="mylogo">
+            <a href="#">
+              <img
+                src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <p>
+            There are many variations of passages of Lorem the Ipsum available
+            but the is majority have suffered that a alteration in that some
+            dummy text. passages of Lorem the Ipsum available.
+          </p>
+          <a class="footerlink faceicon" href="#"
+            ><i style="font-size: 18px;" class="fab">&#xf39e;</i></a
           >
+          <a class="footerlink" href="#"
+            ><i class="fab fa-twitter" style="font-size: 18px;"></i
+          ></a>
+          <a class="footerlink" href="#"
+            ><i class="fab fa-instagram" style="font-size: 18px;"></i
+          ></a>
+          <a class="footerlink" href="#"
+            ><i class="fab fa-pinterest-p" style="font-size: 18px;"></i
+          ></a>
+          <a class="footerlink" href="#"
+            ><i class="fab fa-google-plus" style="font-size: 18px;"></i
+          ></a>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-12">
+          <div class="footeropt">
+            <h3>About Company</h3>
             <div>
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/bg/skill_img.png"
-                alt=""
-              />
+              <p><a href="#">How it works</a></p>
+              <p><a href="#">Search Engine Optimisation</a></p>
+              <p><a href="#">Development</a></p>
+              <p><a href="#">Digital marketing</a></p>
+              <p><a href="#">Content Marketing</a></p>
+              <p><a href="#">Our Security</a></p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="ninepart">
-      <div class="tree1">
-        <img
-          src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape01.png"
-          alt=""
-        />
-      </div>
-      <div class="tree2">
-        <img
-          src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape02.png"
-          alt=""
-        />
-      </div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8 col-md-12 pt-3">
-            <h2 class="head2nine text-light">
-              We help to grow creativity<br />
-              that Break rules
-            </h2>
-            <p class="discnine text-light">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have<br />
-              suffered alteration in some form, by injected humour.
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-12 movinleft">
-            <button class="btn btnnine">Get started</button>
-          </div>
-        </div>
-      </div>
-      <div class="tree3">
-        <img
-          src="http://pluginspoint.com/demo/html/digee/img/shape/cta_shape03.png"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="partten">
-      <p class="firstpten text-center">Read Our</p>
-      <h2 class="headten text-center">Latest News</h2>
-      <p class="secondpten text-center">
-        There are many variations of passages of Lorem Ipsum available but the
-        majority have suffered alteration<br />
-        some randomised words which don't look even slightly believable.
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="bordeone pt-5">
-              <div class="col-12 imgpadd">
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb07.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-12">
-                <div class="disccontent">
-                  <h2 class="ancorten">
-                    <a class="ancorh2ten" href="#"
-                      >How to become a best sale marketer in a years</a
-                    >
-                  </h2>
-                  <p class="discten">
-                    There are many variations of passages of at Lorem Ipsum
-                    available but the majority the have suffered alteration.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="imgten">
-                  <img
-                    src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar01.png"
-                    alt=""
-                  />
-                  <a class="emplink" href="#">Toby Halvorson</a>
-                  <span> June 16, 2018</span>
-                  <a class="empshare" href="#"
-                    ><i class="fas fa-share-alt"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="bordeone pt-5">
-              <div class="col-12 imgpadd">
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb02.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-12">
-                <div class="disccontent">
-                  <h2 class="ancorten">
-                    <a class="ancorh2ten" href="#"
-                      >How to become a best sale marketer in a years</a
-                    >
-                  </h2>
-                  <p class="discten">
-                    There are many variations of passages of at Lorem Ipsum
-                    available but the majority the have suffered alteration.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="imgten">
-                  <img
-                    src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar02.png"
-                    alt=""
-                  />
-                  <a class="emplink" href="#"> Darion Koepp</a>
-                  <span> June 16, 2018</span>
-                  <a class="empshare" href="#"
-                    ><i class="fas fa-share-alt"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="bordeone pt-5">
-              <div class="col-12 imgpadd">
-                <img
-                  src="http://pluginspoint.com/demo/html/digee/img/blog/blog_thumb03.jpg"
-                  alt=""
-                  img-
-                />
-              </div>
-              <div class="col-12">
-                <div class="disccontent">
-                  <h2 class="ancorten">
-                    <a class="ancorh2ten" href="#"
-                      >How to become a best sale marketer in a years</a
-                    >
-                  </h2>
-                  <p class="discten">
-                    There are many variations of passages of at Lorem Ipsum
-                    available but the majority the have suffered alteration.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="imgten">
-                  <img
-                    src="http://pluginspoint.com/demo/html/digee/img/blog/post_avatar02.png"
-                    alt=""
-                  />
-                  <a class="emplink" href="#">Toby Halvorson</a>
-                  <span> June 16, 2018</span>
-                  <a class="empshare" href="#"
-                    ><i class="fas fa-share-alt"></i
-                  ></a>
-                </div>
-              </div>
+        <div class="col-xl-3 col-lg-6 col-md-12">
+          <div class="footeropt">
+            <h3>Information</h3>
+            <div>
+              <p><a href="#">About Us</a></p>
+              <p><a href="#">Our Design</a></p>
+              <p><a href="#">Pricing Plan</a></p>
+              <p><a href="#">Our Team</a></p>
+              <p><a href="#">Our Services</a></p>
+              <p><a href="#">Cloud Manager</a></p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="parteleven">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="secondslider col-12">
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
-                alt=""
-              />
-            </div>
-            <div class="seconditem">
-              <img
-                src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-6 col-md-12">
-            <div class="mylogo">
+        <div class="col-xl-3 col-lg-6 col-md-12">
+          <div class="footeropt">
+            <h3>Our Support</h3>
+            <div class="footersupport">
+              <p>
+                455 West Orchard Street Kings Mountain, NC 28086 Phone: +8
+                (123) 985 789 Email: support@yourbrand.com
+              </p>
+              <h3>Downloads</h3>
               <a href="#">
                 <img
-                  src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
-                  class="img-fluid"
+                  src="http://pluginspoint.com/demo/html/digee/img/icon/play_icon.png"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/icon/apple_icon.png"
+                  alt=""
                 />
               </a>
             </div>
-            <p>
-              There are many variations of passages of Lorem the Ipsum available
-              but the is majority have suffered that a alteration in that some
-              dummy text. passages of Lorem the Ipsum available.
-            </p>
-            <a class="footerlink faceicon" href="#"
-              ><i style="font-size: 18px;" class="fab">&#xf39e;</i></a
-            >
-            <a class="footerlink" href="#"
-              ><i class="fab fa-twitter" style="font-size: 18px;"></i
-            ></a>
-            <a class="footerlink" href="#"
-              ><i class="fab fa-instagram" style="font-size: 18px;"></i
-            ></a>
-            <a class="footerlink" href="#"
-              ><i class="fab fa-pinterest-p" style="font-size: 18px;"></i
-            ></a>
-            <a class="footerlink" href="#"
-              ><i class="fab fa-google-plus" style="font-size: 18px;"></i
-            ></a>
           </div>
-          <div class="col-xl-3 col-lg-6 col-md-12">
-            <div class="footeropt">
-              <h3>About Company</h3>
-              <div>
-                <p><a href="#">How it works</a></p>
-                <p><a href="#">Search Engine Optimisation</a></p>
-                <p><a href="#">Development</a></p>
-                <p><a href="#">Digital marketing</a></p>
-                <p><a href="#">Content Marketing</a></p>
-                <p><a href="#">Our Security</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6 col-md-12">
-            <div class="footeropt">
-              <h3>Information</h3>
-              <div>
-                <p><a href="#">About Us</a></p>
-                <p><a href="#">Our Design</a></p>
-                <p><a href="#">Pricing Plan</a></p>
-                <p><a href="#">Our Team</a></p>
-                <p><a href="#">Our Services</a></p>
-                <p><a href="#">Cloud Manager</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6 col-md-12">
-            <div class="footeropt">
-              <h3>Our Support</h3>
-              <div class="footersupport">
-                <p>
-                  455 West Orchard Street Kings Mountain, NC 28086 Phone: +8
-                  (123) 985 789 Email: support@yourbrand.com
-                </p>
-                <h3>Downloads</h3>
-                <a href="#">
-                  <img
-                    src="http://pluginspoint.com/demo/html/digee/img/icon/play_icon.png"
-                    alt=""
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="http://pluginspoint.com/demo/html/digee/img/icon/apple_icon.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-center Copyrightdiv">
-        <div class="col-lg-6 col-md-12 text-center">
-          <p>Copyright © 2019 Desing by <a href="#">johanspond</a></p>
-        </div>
-        <div class="col-lg-6 col-md-12 text-center privacya">
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a>
         </div>
       </div>
     </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <script>
-    $(".progressin").counterUp({ delay: 10, time: 2000 });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".slickslider").slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: ".arrow-prev",
-        nextArrow: ".arrow-next",
-        variableWidth: true,
-        centerMode: true,
+    <div class="row align-items-center Copyrightdiv">
+      <div class="col-lg-6 col-md-12 text-center">
+        <p>Copyright © 2019 Desing by <a href="#">johanspond</a></p>
+      </div>
+      <div class="col-lg-6 col-md-12 text-center privacya">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div
+  class="modal fade backmodal"
+  id="searchmodal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-content">
+        <input
+          type="text"
+          class="modalsinput"
+          placeholder="Search her..."
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+
+        <button class="sbtnposabs" type="button" id="button-addon2">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fas fa-level-up-alt"></i></a>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+<script>
+  new WOW().init();
+</script>
+
+
+
+
+
+
+
+<script>
+  $(function () {
+  function isScrolledIntoView($elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $elem.offset().top;
+      var elemBottom = elemTop + $elem.height();
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  function count($this) {
+      var current = parseInt($this.html(), 10);
+      if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
+          $this.html(++current);
+          $this.data("isCounting", true);
+          setTimeout(function () {
+              $this.data("isCounting", false);
+              count($this);
+          }, 40);
+      }
+  }
+
+  $(".progressin").each(function () {
+      $(this).data('count', parseInt($(this).html(), 10));
+      $(this).html('0');
+      $(this).data("isCounting", false);
+  });
+
+  function startCount() {
+      $(".progressin").each(function () {
+          count($(this));
       });
+  };
+
+  $(window).scroll(function () {
+      startCount();
+  });
+
+  startCount();
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".slickslider").slick({
+      autoplay: true,
+      autoplaySpeed: 1000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: ".arrow-prev",
+      nextArrow: ".arrow-next",
+      variableWidth: true,
+      centerMode: true,
     });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".secondslider").slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: true,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-            },
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".secondslider").slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: false,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
           },
-          {
-            breakpoint: 900,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ],
-      });
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
     });
-  </script>
+  });
+</script>
+<script>
+  $(window).scroll(function(){
+    var sticky = $('.headbar'),
+    scroll = $(window).scrollTop();
+    if (scroll >=200) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
+  $(window).scroll(function(){
+    var sticky = $('nav'),
+    scroll = $(window).scrollTop();
+    if (scroll >=200) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
+</script>
 </html>

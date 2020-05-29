@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 4 columns</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/7fe7073bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/P4column.css" />
+   
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+<style>
+  .mylogo {
+    width: 50px;
+    height: 50px;
+  }
+  .mainmenu {
+    display: inline-block;
+    position: relative;
+    color: #E3D7FE;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Muli", sans-serif;
+    padding: 25px 0;
+    margin-left: 25px;
+  }
+  .mainmenu a{color:#E3D7FE ;
+    text-decoration: none;}
+  .singbtn {
+    width: 170px;
+    padding: 20px;
+    line-height: 15px;
+    color: #753ffa;
+    font-size: 20px;
+  }
+  .singbtn:hover{background-color: transparent;
+  color: white;
+border: 1px solid #E3D7FE;}
+  .searcebtn {
+    border: none;
+    background: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  .menuitem {
+    position: absolute;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    z-index: 1;
+    box-sizing: border-box;
+    left: 0;
+    top: 90px;
+    width: 350px;
+    transition-duration: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .mainmenu:hover .menuitem {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+  }
+ .links{padding-top: 10px;
+    padding-bottom: 10px;}
+  .links a{
+    margin-left: -15px;
+    padding: 5px;
+  color: #5d58f7;
+  font-size: 14px;
+  font-weight: 400;
+  transition-duration: 0.5s;
+    
+  }
+  .links a:hover{margin-left: 5px;}
+  .discdiv {
+    border-left: 5px solid white;
+    padding-left: 15px;
+    margin-top: 100px;
+  }
+  .discdivhead {
+    font: size 40px;
+    color: white;
+  }
+  .discdiv a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    transition-duration: 0.5s;
+  }
+  .discdiv a:hover {
+    color: #c0beff;
+  }
+
+  .headnav{border: 1px solid rgb(231, 230, 230);
+  
+z-index: 9;}
+.headnavlinks{text-decoration: none !important;
+color: white !important;
+font-size: 15px !important;
+font-weight: bold !important;
+padding-left: 10px !important;}
+.dropdownlistl{background-color: #7C54F3;}
+.dropdownlistl a{text-decoration: none !important;
+color: white;}
+.dropdownlistl a:hover{text-decoration: none !important;
+background-color: transparent;
+color: white;}
+  @media screen and (min-width: 990px) {
+  nav {
+      display: none !important;
+  }}
+  @media screen and (max-width: 990px) {
+  .headbar {
+      display: none !important;
+  }
+}
+.posrel{position: relative;}
+.poabs2{position: absolute;
+background-color: #7C54F3;
+z-index: 9;
+
+
+top: 60px;}
+.fixed {position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #7C49FB;
+z-index: 9;
+animation-name: fadeInDown2;
+animation-duration: 0.5s;
+transition-duration: 0.3;}
+
+@keyframes fadeInDown2 {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+</style>
+    
+  </head>
+  <body>
+    <div class="firstpart">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light posrel">
+          <div class="mylogo">
+            <a href="#">
+              <img
+                src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse poabs2 w-100"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown headnav">
+                <a
+                  class="nav-link dropdown-toggle headnavlinks"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <div
+                  class="dropdown-menu dropdownlistl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="index.html">Home 1</a>
+                  <a class="dropdown-item" href="home2.html">Home 2</a>
+
+                  <a class="dropdown-item" href="home3.html">Home 3</a>
+                </div>
+              </li>
+              <li class="nav-item headnav pt-2 pb-2">
+                <a
+                  href="services.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  class="headnavlinks"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item dropdown headnav">
+                <a
+                  class="nav-link dropdown-toggle headnavlinks"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Portofolio
+                </a>
+                <div
+                  class="dropdown-menu dropdownlistl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="P2column.html"
+                    >Portofolio 2 columns</a
+                  >
+                  <a class="dropdown-item" href="P3column.html"
+                    >Portofolio 3 columns</a
+                  >
+
+                  <a class="dropdown-item" href="P4column.html"
+                    >Portofolio 4 columns</a
+                  >
+                  <a class="dropdown-item" href="p3columnFW.html"
+                    >Portofolio 3 columns full width</a
+                  >
+                  <a class="dropdown-item" href="P4columnFW.html"
+                    >Portofolio 4 columns full width</a
+                  >
+                  <a class="dropdown-item" href="P3columnstyle.html"
+                    >Portofolio 3 columns style 2</a
+                  >
+                  <a class="dropdown-item" href="P4columnstyle.html"
+                    >Portofolio 4 columns style 2</a
+                  >
+                  <a class="dropdown-item" href="PM2column.html"
+                    >Portofolio 2 columns Masonary</a
+                  >
+                  <a class="dropdown-item" href="PM3column.html"
+                    >Portofolio 3 columns Masonary
+                  </a>
+                  <a class="dropdown-item" href="PM3columngutter.html"
+                    >Portofolio 3 columns No cutter</a
+                  >
+                  <a class="dropdown-item" href="P3columnstyleFW.html"
+                    >style 2 columns 3 full width</a
+                  >
+                  <a class="dropdown-item" href="P4columnstyleFW.html"
+                    >style 2 columns 4 full width</a
+                  >
+
+                  <a class="dropdown-item" href="Pdetailes.html"
+                    >Portofolio details</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown headnav">
+                <a
+                  class="nav-link dropdown-toggle headnavlinks"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div
+                  class="dropdown-menu dropdownlistl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="about.html">About us</a>
+                  <a class="dropdown-item" href="pricing.html">Pricing plane</a>
+
+                  <a class="dropdown-item" href="team.html">Our team</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown headnav">
+                <a
+                  class="nav-link dropdown-toggle headnavlinks"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <div
+                  class="dropdown-menu dropdownlistl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="Bsidebar.html">Blog gride side bar</a>
+                  <a class="dropdown-item" href="#">Blog masaonary</a>
+
+                  <a class="dropdown-item" href="BMsidebar.html">Blog masaonary side bar</a>
+                  <a class="dropdown-item" href="Blist.html">Blog list</a>
+                  <a class="dropdown-item" href="Bdetails.html">Blog details</a>
+                </div>
+              </li>
+              <li class="nav-item headnav pt-2 pb-2">
+                <a
+                  href="contactus.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  class="headnavlinks"
+                  >Contact US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-12 headbar pt-2">
+            <div class="row">
+              <div class="col-1">
+                <div class="mylogo">
+                  <a href="#">
+                    <img
+                      src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-10">
+                <ul>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="#">Home</a>
+                    <ul class="menuitem">
+                      <li class="links">
+                        <a href="index.html">Home one</a>
+                      </li>
+                      <li class="links"><a href="home2.html">Home two</a></li>
+                      <li class="links"><a href="home3.html">Home three</a></li>
+                    </ul>
+                  </li>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="services.html">Sevices</a>
+                  </li>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="#">Portofolio</a>
+                    <ul class="menuitem">
+                      <li class="links">
+                        <a href="P2column.html"> Portofolio 2 columns </a>
+                      </li>
+                      <li class="links">
+                        <a href="P3column.html">portofolio 3 columns</a>
+                      </li>
+                      <li class="links">
+                        <a href="P4column.html">portofolio 4 columns</a>
+                      </li>
+                      <li class="links">
+                        <a href="P3columnFW.html"
+                          >portofolio 3 columns full width</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="P4columnFW.html"
+                          >portofolio 4 columns full width</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="P3columnstyle.html"
+                          >portofolio 3 columns style 2</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="P4columnstyle.html"
+                          >portofolio 4 columns style 2</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="PM2column.html"
+                          >portofolio 2 columns masonary</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="PM3column.html"
+                          >portofolio 3 columns masonry</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="PM3columngutter.html"
+                          >Masonry 3 columns No Gutter</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="P3columnstyleFW.html"
+                          >Style 2 column 3 full width</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="P4columnstyleFW.html"
+                          >Style 2 column 4 full width</a
+                        >
+                      </li>
+                      <li class="links">
+                        <a href="Pdetailes.html">portofolio Detailes</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="#">Pages</a>
+                    <ul class="menuitem">
+                      <li class="links"><a href="about.html">About us</a></li>
+                      <li class="links">
+                        <a href="pricing.html">Pricing plan</a>
+                      </li>
+                      <li class="links"><a href="team.html">Our team</a></li>
+                    </ul>
+                  </li>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="#">Blog</a>
+                    <ul class="menuitem">
+                      <li class="links">
+                        <a href="Bsidebar.html">Blog bride sidebar</a>
+                      </li>
+                      <li class="links">
+                        <a href="Bmasonary.html">Blog masonary</a>
+                      </li>
+                      <li class="links">
+                        <a href="BMsidebar.html">Blog masonary sidebar</a>
+                      </li>
+                      <li class="links">
+                        <a href="Blist.html">Blog List</a>
+                      </li>
+                      <li class="links">
+                        <a href="Bdetails.html">Blog Detailes</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mainmenu">
+                    <a class="mainadress" href="contactus.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 d-none d-xl-block text-right mt-2">
+                <button class="searcebtn pr-3">
+                  <svg
+                    class="bi bi-search text-light"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <button class="btn btn-light ml-3 singbtn font-weight-bold">
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+            <div class="discdiv">
+                <h2 class="discdivhead">Portfolio Grid 4 Columns</h2>
+                <a href="index.html">Home</a><span class="text-light"> - Portfolio</span>
+            </div>
+        </div>
+        </div>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+    <div class="container">
+    
+    <div class="row ">
+    <div id="myBtnContainer " class="col-12 text-center btncontent">
+      <button class="btnact active" onclick="filterSelection('all')"> See all works</button>
+      <button class="btnact" onclick="filterSelection('brand')"> Branding</button>
+      <button class="btnact" onclick="filterSelection('web')"> Webdesign</button>
+      <button class="btnact" onclick="filterSelection('fash')"> Fashion</button>
+      <button class="btnact" onclick="filterSelection('uiux')"> UI/UX</button>
+    </div>
+</div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row paddtop">
+      <div class="column  fash uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInUp" data-wow-duration="0.5s">
+          <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project01.jpg" 
+          style="width: 100%;">
+          <h4 class="text-center"><a href="#">Illustration Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column web uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project02.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand fash col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInDown" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project03.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Illustration Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      
+      <div class="column   uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInLeft" data-wow-duration="0.5s">
+          <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project04.jpg" 
+          style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInUp" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project05.jpg"
+        style="width: 100%;" >
+          <h4 class="text-center"><a href="#">Illustration Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column  web uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInDown" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project06.jpg"
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+    
+      <div class="column  uiux col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInLeft" data-wow-duration="0.5s">
+          <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project07.jpg" 
+          style="width: 100%;">
+          <h4 class="text-center"><a href="#">Illustration Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand web  col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project08.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web fash col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project09.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web  col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project10.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand web fash col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project11.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project12.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project13.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project14.jpg" 
+        style="width: 100%;">
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project15.jpg"
+        style="width: 100%;" >
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      <div class="column brand uiux web col-xl-3 col-lg-4 col-md-6 col-12">
+        <div class="content text-center wow fadeInRight" data-wow-duration="0.5s">
+        <img src="http://pluginspoint.com/demo/html/digee/img/project/four_columns/fc_project16.jpg"
+        style="width: 100%;" >
+          <h4 class="text-center"><a href="#">Interior Art Design</a></h4>
+          <p class="text-center">Designe & Banding Items</p>
+        </div>
+      </div>
+      
+    <!-- END GRID -->
+    </div>
+    <div class="text-center">
+        <button class="btnact" > Load more</button>
+    </div>
+</div>
+    <!-- END MAIN -->
+    </div>
+    <div class="parteleven">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="secondslider col-12">
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_01.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_02.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_03.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_04.png"
+                  alt=""
+                />
+              </div>
+              <div class="seconditem">
+                <img
+                  src="http://pluginspoint.com/demo/html/digee/img/brand/brand_05.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-12">
+              <div class="mylogo">
+                <a href="#">
+                  <img
+                    src="https://seeklogo.com/images/H/h-eagle-letter-logo-0B3667987A-seeklogo.com.png"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <p>
+                There are many variations of passages of Lorem the Ipsum available
+                but the is majority have suffered that a alteration in that some
+                dummy text. passages of Lorem the Ipsum available.
+              </p>
+              <a class="footerlink faceicon" href="#"
+                ><i style="font-size: 18px;" class="fab">&#xf39e;</i></a
+              >
+              <a class="footerlink" href="#"
+                ><i class="fab fa-twitter" style="font-size: 18px;"></i
+              ></a>
+              <a class="footerlink" href="#"
+                ><i class="fab fa-instagram" style="font-size: 18px;"></i
+              ></a>
+              <a class="footerlink" href="#"
+                ><i class="fab fa-pinterest-p" style="font-size: 18px;"></i
+              ></a>
+              <a class="footerlink" href="#"
+                ><i class="fab fa-google-plus" style="font-size: 18px;"></i
+              ></a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12">
+              <div class="footeropt">
+                <h3>About Company</h3>
+                <div>
+                  <p><a href="#">How it works</a></p>
+                  <p><a href="#">Search Engine Optimisation</a></p>
+                  <p><a href="#">Development</a></p>
+                  <p><a href="#">Digital marketing</a></p>
+                  <p><a href="#">Content Marketing</a></p>
+                  <p><a href="#">Our Security</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12">
+              <div class="footeropt">
+                <h3>Information</h3>
+                <div>
+                  <p><a href="#">About Us</a></p>
+                  <p><a href="#">Our Design</a></p>
+                  <p><a href="#">Pricing Plan</a></p>
+                  <p><a href="#">Our Team</a></p>
+                  <p><a href="#">Our Services</a></p>
+                  <p><a href="#">Cloud Manager</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12">
+              <div class="footeropt">
+                <h3>Our Support</h3>
+                <div class="footersupport">
+                  <p>
+                    455 West Orchard Street Kings Mountain, NC 28086 Phone: +8
+                    (123) 985 789 Email: support@yourbrand.com
+                  </p>
+                  <h3>Downloads</h3>
+                  <a href="#">
+                    <img
+                      src="http://pluginspoint.com/demo/html/digee/img/icon/play_icon.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="http://pluginspoint.com/demo/html/digee/img/icon/apple_icon.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center Copyrightdiv">
+          <div class="col-lg-6 col-md-12 text-center">
+            <p>Copyright © 2019 Desing by <a href="#">johanspond</a></p>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center privacya">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btnact");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function () {
+          $(".secondslider").slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                },
+              },
+              {
+                breakpoint: 900,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                },
+              },
+              {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ],
+          });
+        });
+      </script>
+       <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fas fa-level-up-alt"></i></a>
+    </body>
+    <script>
+      $(window).scroll(function(){
+        var sticky = $('.headbar'),
+        scroll = $(window).scrollTop();
+        if (scroll >=200) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+      });
+      $(window).scroll(function(){
+        var sticky = $('nav'),
+        scroll = $(window).scrollTop();
+        if (scroll >=200) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+      });
+    </script>
+    </html>
+    

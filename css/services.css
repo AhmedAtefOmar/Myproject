@@ -1,0 +1,321 @@
+body{overflow-x: hidden;}
+.firstpart {
+    background-image: url(http://pluginspoint.com/demo/html/digee/img/bg/breadcrumb_bg.jpg);
+  
+    background-size: cover;
+  padding-bottom: 160px;}
+  .mylogo {
+    width: 50px;
+    height: 50px;
+  }
+  .mainmenu {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Muli", sans-serif;
+    padding: 25px 0;
+    margin-left: 25px;
+  }
+  .singbtn {
+    width: 170px;
+    padding: 20px;
+    line-height: 15px;
+    color: #753ffa;
+    font-size: 20px;
+  }
+  .searcebtn {
+    border: none;
+    background: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  .menuitem {
+    position: absolute;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    z-index: 1;
+    box-sizing: border-box;
+    left: 0;
+    top: 90px;
+    width: 350px;
+    transition-duration: 0.8s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .mainmenu:hover .menuitem {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .links {
+    padding: 15px;
+    color: black;
+  }
+  .discdiv{border-left: 5px solid white;
+  padding-left: 15px;
+margin-top: 100px;}
+  .discdivhead{font: size 40px;;
+  color: white;}
+  .discdiv a{text-decoration: none;
+  font-weight: bold;
+color: white;
+font-size: 18px;
+transition-duration: 0.5s;}
+.discdiv a:hover{color: #C0BEFF;}
+.paddbt2 {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.secondp2 {
+  color: #8884f9;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.secondh2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.secondp3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #677294;
+}
+.paddbt4 {
+  padding-bottom: 250px;
+}
+.thirdpart{padding-top: 100px;}
+.partnine{background: linear-gradient( 0deg, rgb(251,251,251) 0%, rgb(242,250,255) 100%);
+  padding-top: 100px;
+  padding-bottom: 100px;}
+  .partninehead{font-weight: 800;
+    font-size: 40px;}
+    .partninep{font-size: 16px;
+    color: #AFB6C9;}
+    .partninepicon{color: #B0B6C8;
+    font-size: 15px;}
+    .part6new {
+      padding-top: 50px;
+    }
+    .firsthead6 {
+      font-weight: 700;
+      line-height: 10px;
+    }
+    .secondp6 {
+      font-size: 16px;
+      color: #667193;
+      padding-bottom: 0;
+    }
+    .mainpadd6 {
+      margin-top: 30px;
+      padding-bottom: 150px;
+    }
+    .part6back sub {
+      color: #b3b8c8;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .btnpart6n {
+      background: #5d58f7;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+    
+      position: relative;
+    }
+    
+    .part6back:hover {
+      background-image: url(https://fsa.sasb.org/wp-content/uploads/2014/06/photodune-6274160-business-team-in-office-meeting-presentation-conference-l.jpg);
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+    
+      transition-duration: 3s;
+    }
+    .part6back:hover .blueback {
+      transition-duration: 0.5s;
+      transition-delay: 0.1 s;
+      opacity: 0.5;
+      z-index: 0;
+    }
+    
+    .part6back:hover .headpart6 sub {
+      color: white;
+    }
+    
+    .part6back:hover .headpart6 {
+      color: white;
+      z-index: 1;
+    }
+    .part6back:hover .headpart6 h2 {
+      color: white;
+      z-index: 1;
+    }
+    .part6back:hover .hrpart6 {
+      color: white;
+      z-index: 1;
+    }
+    .part6back:hover .icopart6 {
+      color: white;
+      z-index: 1;
+    }
+    .part6back:hover .part6p {
+      color: white;
+      z-index: 1;
+    }
+    .part6back:hover .btnpart6n {
+      color: #5d58f7;
+      background-color: white;
+      z-index: 1;
+    }
+    .headpart6 {
+      position: relative;
+    }
+    .part6head {
+      font-weight: 900;
+      font-size: 40px;
+      color: black;
+    }
+    .hrpart6 {
+      font-weight: 500;
+      width: 100%;
+      position: absolute;
+      color: #b3b8c8;
+      left: 0;
+      visibility: visible;
+    }
+    .icopart6 {
+      color: rgb(92, 141, 92);
+    }
+    .part6p {
+      font-size: 15px;
+      color: #9ba2b8;
+      position: relative;
+    }
+    .btnpart6 {
+      padding-top: 35px;
+      padding-bottom: 25px;
+      z-index: 1;
+    }
+    .blueback {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: blue;
+      opacity: 0;
+    }
+    .icopart6 {
+      color: rgb(92, 141, 92);
+    }
+    .part6back {
+      position: relative;
+      background-color: white;
+      -webkit-box-shadow: -5px 14px 66px -15px rgba(15,3,15,0.49);
+-moz-box-shadow: -5px 14px 66px -15px rgba(15,3,15,0.49);
+box-shadow: -5px 14px 66px -15px rgba(15,3,15,0.49);
+      padding: 25px;
+      transition-duration: 0.3s;
+    }
+    .firstp6{    color: #5d58f7;
+      font-size: 18px;
+      display: block;
+      font-family: 'Muli', sans-serif;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 5px;}
+    .parteleven {padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .seconditem {padding-left: 50px;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .seconditem:hover {
+      filter: grayscale(0%);
+    }
+    .footer {
+      background-image: url(http://pluginspoint.com/demo/html/digee/img/bg/footer_bg01.png);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 400px;
+      padding-bottom: 20px;
+    }
+    .footer p {
+      color: white;
+    line-height: 28px;
+      font-size: 16px;
+    }
+    .footer .mylogo {
+      padding-bottom: 70px;
+    }
+    .footerlink {
+      width: 20px;
+      height: 20px;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 8px;
+      margin-left: 8px;
+      color: white;
+    
+      transition: 0.5s;
+    }
+    .faceicon{width: 30px;
+    height: 25px;
+    padding: 8px 10px;}
+    .footerlink:hover {
+      text-decoration: none;
+      background: white;
+      color: #020a66;
+    }
+    .footeropt{color: white;}
+    .footeropt p a {text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;}
+    .footeropt p{line-height: 20px;
+    }
+    .footeropt div{padding-top: 40px;}
+    .footeropt p a:hover{text-decoration: none;
+      padding-left: 5px;}
+      .footersupport{font-size: 20px;
+      font-weight: 500;
+    }
+    .footersupport p{line-height: 20px;}
+    .footersupport h3{margin-top: 50px;}
+    .footersupport a{border: 1px solid rgb(233, 230, 230);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 7px;
+    text-decoration: none;
+    font-size: 16px;}
+    .Copyrightdiv{margin-top: 150px;
+      padding-top: 20px;
+    border-top: 1px solid #0c0420;}
+    .Copyrightdiv a{text-decoration: none;
+    font-weight: bold;
+    color: white;}
+    .privacya a{font-weight: normal;
+    padding-left: 10px; }
+    #scrollUp {
+      background: #6C3CF0;
+      height: 45px;
+      width: 45px;
+      right: 50px;
+      bottom: 77px;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 50%;
+      line-height: 45px;
+      z-index: 9 !important;}
+      html{scroll-behavior: smooth;}
